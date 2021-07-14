@@ -1,0 +1,330 @@
+/* ======== > Google Font Links <======== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+ /*================> Variable Declared <============ */
+
+    :root {
+    --white-color: #ffffff;
+    --text-color: #6c6c6c;
+    --button-bg-color: #e02c6d;
+  }
+
+  
+  /*==============>Common CSS Styles<================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--white-color);
+  }
+  h1{
+    font-weight: 700;
+    color: #18191f;
+  }
+
+  ul li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .btn2 {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 35px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid var(--button-bg-color);
+    transition: background-color 0.3s ease-in;
+    margin-top: 20px;
+  }
+  .btn2:hover{
+       background-color: transparent;
+       border: 1px solid white;
+       color: white;
+  }
+
+  .btn-red {
+    background-color: var(--button-bg-color);
+  }
+  .fas.fa-arrow-right {
+    margin-left: 6px;
+    animation: icon 1s ease-in-out infinite;
+  }
+  
+  /*==============>Header Style<============ */
+  .header-section{
+    background: #2D25A0;
+  }
+  .header-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 10px;
+  }
+  .nav--links ul li{
+    display: inline-block;
+  }
+  .nav--links ul li a{
+    color: var(--white-color);
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 15px 25px;
+    transition: background 0.3s ease;
+  }
+  .nav--links ul li a:hover{
+    color: #E02C6D;
+  }
+
+  
+  /*===============>Hero Area Style<=============== */
+  .hero-section{
+    background: #2D25A0;
+  }
+  .hero-container{
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 120px;
+  }
+  .hero--content{
+    padding-right: 75px;
+  }
+  .hero--content h1{
+    font-size: 64px;
+    line-height: 80px;
+    color: var(--white-color);
+  }
+  .hero--banner img{
+    width: 556px;
+    height: 438px;
+  }
+  .toggle-bar{
+    display: none;
+  }
+  
+
+
+/* ================> Players Section Starts Here <============ */
+
+#players-section{
+    background-color: #FBFCFC;
+    overflow: hidden;
+}
+.player-box{
+    width: 330px;
+    height: 474px;
+    background-color: white;
+    margin: 0 30px 27px 30px;
+    padding: 15px;
+    border: none;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.player-box:hover{
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.30);
+    border: 1px solid #D0D3D4;
+
+}
+.player-info{
+    width: 300px;
+    height: 426px;
+}
+.player-info img{
+    width: 300px;
+    height: 256px;
+
+}
+.player-info h4{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+    text-align: center;
+
+}
+.player-info p{
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: center;
+}
+
+.players-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 70px 210px 165px 180px ;
+    justify-content: center;
+}
+
+
+
+/* =============== Highlights Section Starts here =============== */
+.highlight-section{
+    overflow: hidden;
+}
+.highlights-container-box{
+display: flex;
+}
+.highlights-info{
+    width: 466px;
+    height: 309px;
+    margin: 59px 69px 217px 182px;
+}
+
+#highlights-container img{
+    width: 567px;
+    height: 427px;
+    margin: 0 156px 158px 0;
+}
+.highlights-info h1{
+    font-size: 48px;
+    line-height:60px ;
+    font-weight: 700;
+}
+.highlights-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.highlight-btn{
+    width: 173px;
+    height: 44px;
+    margin-top: 24px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    transition: all 0.5s;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.highlight-btn i{
+    margin-left: 8px;
+}
+.highlight-btn:hover{
+    background-color: transparent;
+    border: 1px solid #E02C6D;
+    color: #E02C6D;
+}
+
+/* ==========> latest News Section <=========== */
+.blog-section{
+    margin-top: 50px ;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.section-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    grid-column-gap:50px;
+}
+.blog{
+    position:relative;
+    overflow: hidden;
+    height: 414px;
+}
+.blog-img img{
+width: 100%;
+transition: transform 0.5s;
+
+}
+.blog-img{
+    width: 100%;
+
+}
+.blog:hover .blog-img img{
+    transform: scale(1.9);
+}
+.blog-info{
+    padding: 0px 20px;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(53, 90, 160, 0.911) 30%, rgba(255, 255, 255, 0) 80%);
+    bottom: 7px;
+    padding-top: 170px;
+    padding-bottom: 30px;
+    bottom: 0px;
+   
+}
+.blog-date{
+    font-size: 16px;
+    color: #fae313;
+}
+.blog-date i{
+    margin-right: 5px;
+}
+.blog-title{
+    font-size: 25px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    margin-top: -5px;
+    color: white;
+}
+
+#news-btn{
+    padding: 15px 30px;  
+    margin-top: 40px;  
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.5s;
+}
+#news-btn i{
+    margin-left: 8px;
+}
+#news-btn:hover{
+    background-color: transparent;
+    border:1px solid #E02C6D;
+    color: #E02C6D;
+}
+
+/* ========> Footer Section Starts here <=========== */
+.footer-logo{
+    text-align: center;
+}
+.footer-logo img{
+    width: 453px;
+}
+.social-media-icons{
+    text-align: center;
+
+}
+.social-media-icons i{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #6C6C6C;
+}
+footer p{
+    text-align: center;
+    font-weight: 400;
+}
