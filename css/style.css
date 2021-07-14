@@ -33,7 +33,13 @@
   a {
     text-decoration: none;
   }
-  .btn2 {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text-color);
+  }
+  .btn,.btn2 {
     color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
@@ -114,6 +120,10 @@
   .hero--banner img{
     width: 556px;
     height: 438px;
+    transition: 0.5s;
+  }
+  .hero--banner img:hover{
+    transform: scale(1.2);
   }
   .toggle-bar{
     display: none;
@@ -177,56 +187,32 @@
 
 
 /* =============== Highlights Section Starts here =============== */
-.highlight-section{
-    overflow: hidden;
+.highlight-container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
 }
-.highlights-container-box{
-display: flex;
+.highlight--area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 0;
 }
-.highlights-info{
-    width: 466px;
-    height: 309px;
-    margin: 59px 69px 217px 182px;
+.highlight__content{
+    padding-right: 70px;
+    padding-left: 4px;
 }
-
-#highlights-container img{
-    width: 567px;
-    height: 427px;
-    margin: 0 156px 158px 0;
-}
-.highlights-info h1{
+.highlight__content h1{
     font-size: 48px;
-    line-height:60px ;
-    font-weight: 700;
+    line-height: 60px;
 }
-.highlights-info p{
-    color: #6C6C6C;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 400;
+.highlight__content p{
+    margin: 8px 0 4px;
 }
-.highlight-btn{
-    width: 173px;
-    height: 44px;
-    margin-top: 24px;
-    padding: 10px 24px;
-    background-color: #E02C6D;
-    color: white;
-    border: none;
-    transition: all 0.5s;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+.thumbnail img {
+  height: 427px;
+  width: 567px;
 }
-.highlight-btn i{
-    margin-left: 8px;
-}
-.highlight-btn:hover{
-    background-color: transparent;
-    border: 1px solid #E02C6D;
-    color: #E02C6D;
-}
-
 /* ==========> latest News Section <=========== */
 .blog-section{
     margin-top: 50px ;
@@ -339,12 +325,19 @@ footer p{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #highlights-container{
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+    .highlight-container {
+      width: 90%;
     }
-    #highlights-container img{
-        width: 100%;
+  
+    .highlight--area {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .thumbnail img {
+      width: 90%;
+      height: 100%;
+      margin-top: 36px;
     }
     .blogs{
         grid-template-columns: repeat(2, 300px);
@@ -430,28 +423,26 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
     }
     
-    .highlights-info{
-        width: 329px;
-    height: 299px;
+    .highlight--area {
+      margin: 60px 0;
     }
-    #highlights-container{
-        flex-direction: column;
-        align-items: center;
+    .highlight-container {
+      width: 90%;
     }
-    .highlight-img{
-        width: 328px;
-        height: 248px;
-        align-items: center;
-        margin-top: 0;
-        overflow: hidden;
+    .highlight__content {
+      padding: 0;
     }
-    .highlight-img img{
-        width: 100%;
-        height: 100%;
-        text-align: center;
+    .highlight__content h1 {
+      font-size: 30px;
+      line-height: 40px;
     }
-    .highlights-info h1{
-        font-size: 30px;
+    .highlight--area {
+      flex-direction: column;
+    }
+    .thumbnail img {
+      width: 328px;
+      height: 248px;
+      margin-top: 36px;
     }
     .blogs{
         grid-template-columns: repeat(1, 300px);
